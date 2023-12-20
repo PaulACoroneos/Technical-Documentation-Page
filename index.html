@@ -11,9 +11,9 @@
 
 <body class="container">
   <nav id="navbar">
-    <h1>Javascript Primitives</h1>
+    <header><h1>Javascript Primitives</h1></header>
     <ul>
-      <li><a href="#Intro" class="nav-link">Intro</a></li>
+      <li><a href="#Introduction" class="nav-link">Intro</a></li>
       <li><a href="#Number" class="nav-link">Number</a></li>
       <li><a href="#String" class="nav-link">String</a></li>
       <li><a href="#Array" class="nav-link">Array</a></li>
@@ -23,23 +23,23 @@
     </ul>
   </nav>
   <main id="main-doc">
-    <section class="main-section" id="Intro">
-      <h2>Introduction</h2>
+    <section class="main-section" id="Introduction">
+      <header><h2>Introduction</h2></header>
       <p>Welcome to a brief introducton to Javascript primities. This can be a quick starting point for beginners to become familiar with some of the primitives of the language including helpful links to MDN (Mozilla Developer Network) pages</p>
       <p>Feel free to scroll through the content or click a nav link above in the navbar to skip ahead to pertinent content!</p>
     </section>
     <section class="main-section" id="Number">
-      <h2>Number</h2>
+      <header><h2>Number</h2></header>
       <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">The Number primitive</a> is used to represent numeric content in JavaScript. Unlink other languages there is really no concept of integer, float or even BigInt natively. All JavaScript numer are floating point</p>
       <code>const sum = 42 + 10; //evaluates to 52</code>
     </section>
     <section class="main-section" id="String">
-      <h2>String</h2>
+      <header><h2>String</h2></header>
       <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">Strings are textual content</a>, typically used for rendering out something to be read out (like this paragraph content!). String in JavaScript are immutable, meaning that when you chagne a string you create a new instance of a string</p>
       <code>const combinedString = 'hello' + 'world'; // returns "hello world"</code>
     </section>
     <section class="main-section" id="Array">
-      <h2>Array</h2>
+      <header><h2>Array</h2></header>
       <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Arrays are essentially lists of other primitives.</a> They are used to collect similar values that can easily be iterated over to present to a user or even search through.</p>
       <code>
         const arr = ['bananas', 'apples', 'oranges'];
@@ -55,7 +55,7 @@
       </ul>
     </section>
     <section class="main-section" id="Object">
-      <h2>Object</h2>
+      <header><h2>Object</h2></header>
       <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Objects in JavaScript</a> are kind of the root primitive of almost all other types (yes arrays are actually objects under the hood!). Objects can be thought of as a dictionary of keys and values that can be quickly accessed. This data type is quite ubiquitous and is easily consumed for a wide variety of purposes.</p>
       <code>
         const myObject = { name: 'John', age: 42 };
@@ -71,7 +71,7 @@
       </ul>
     </section>
     <section class="main-section" id="Null">
-      <h2>Null</h2>
+      <header><h2>Null</h2></header>
       <p>The <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null">best way to describe null</a> is definining a value to nothing on purpose. Generally in JavaScript it is used as a precursor to eventually assigning some other value. The null then can used to do logic (such as conditional rendering in frameworks such as React)</p>
       <code>let theAnswerToLife = null
         <br />
@@ -80,7 +80,7 @@
       </code>
     </section>
     <section class="main-section" id="Undefined">
-      <h2>Undefined</h2>
+      <header><h2>Undefined</h2></header>
       <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined">Undefined can seem quite similar to null initially.</a> But it differs in a slighly nuanced way. Undefined means the lack of definition of a value implicitely. Or in other words it's something that hasn't been defined yet, typically not even by the developer writing the code. A common example would be trying to ask for a property on an Object or an index outside the length of an array. The developer has not defined it explicitely but it is by definition undefined.</p>
       <code>
         const myObject = { name: 'John' };
